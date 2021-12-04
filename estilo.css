@@ -25,10 +25,13 @@ main,header {
 form {
     text-align: left;
     display: flex;
-    flex-direction: column;background-color: white;width: 507px;
-    padding: 1.8em;
+    flex-direction: column;
+    background-color: white;
+    width: 507px;
+    padding: 0 1.8em;
     border: 3px solid #B3935F;
-    box-shadow: rgba(241, 215, 215, 0.1) 0px 4px 12px;}
+    box-shadow: rgba(241, 215, 215, 0.1) 0px 4px 12px;
+    }
 
 
 #name, #email, #number, #dropdown, button {
@@ -37,14 +40,15 @@ form {
     height: 37px;
 }
 
-form p,button { 
-    margin: 38px 0px 8px; 
-    font-weight: 700; 
-    font-size: 1.4em; 
+form p,button {
+    margin: 32px 0px 8px;
+    font-weight: 700;
+    font-size: 1.2em;
 }
 
-.form-group { 
-    margin: -5px 0px 49px; padding: 0.25rem; 
+.form-group {
+    margin: -5px 0px 0px;
+    padding: 0.25rem;
     text-align: left;
     width: 100%;
     display: flex;
