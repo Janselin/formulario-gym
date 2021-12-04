@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Formulario</title>
+</head>
+<body>
+
+<header>      
+    <h1 id="title">Formulario de registro</h1>
+    <p id="description"> Gracias por tu interes en nuestro gym. <br>
+    Por favor completa los datos y pronto nos estaremos comunicando con vos! </p>
+</header>
+<main class="container">
+    
+    <form id="survey-form" action="#" method="post">
+    
+    
+        <label id="name-label" for="name"></label> <p>Nombre y Apellido: </p><input id="name" type="text" placeholder="Nombre Apellido">
+    
+        <label id="email-label" for="email"></label> <p>Email: </p><input id="email" type="email" placeholder="nombre@dominio.com">
+    
+        <label id="number-label" for="number" ></label> <p>Edad: </p><input id="number" type="number" min="18" max="100" placeholder="Edad" >
+    
+    
+        <p>Estado Civil</p>
+        <select  name="estado" id="dropdown">
+            <option selected value="soltero">Soltero/a</option>
+            <option value="casado">Casado/a</option>
+            <option value="viudo">Viudo/a</option>
+        </select>
+
+    <div class="form-group">
+        <p>Género</p>
+        <label>Femenino<input type="radio" name="estado" value="Femenino" class="radio"></label>
+    
+        <label>Masculino<input type="radio" name="estado" value="Masculino" class="radio"></label>
+    
+        <label>No contesta<input type="radio" name="estado" value="NC" class="radio"></label>
+      
+    
+        <p>Actividades que te interesan</p>
+        
+       
+            <label>Zumba<input type="checkbox"
+            id="checkbox"
+            name="actividades" value="zumba"></label>
+            <label>Cardio<input type="checkbox"
+                id="checkbox"
+                name="actividades" value="cardio"></label>
+            <label>Spinning<input type="checkbox" name="actividades"
+                id="checkbox"
+                value="spinning"></label>
+            <label>Crossfit<input type="checkbox" name="actividades"
+                id="checkbox" value="crossfit"></label>
+            </div>
+        
+    
+    <label for="text"> </label> <p>Dejanos tu comentario:</p>
+    <textarea name="" id="text" cols="30" rows="10"></textarea>
+    
+    
+    
+    
+    
+    <button id="submit">Enviar</button>
+    </form>
+    
+</main>
+</body>
+</html>
