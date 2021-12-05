@@ -1,27 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
 
+body {
+    background-image: url("./img/bac.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    overflow-x: hidden;
+}
 
-* { margin: 0px; padding: 0px; box-sizing: border-box; font-family: Montserrat, sans-serif; }
-
-
-body { 
-    background-image: url("./img/bac.jpg"); 
-    background-size: cover; background-repeat: no-repeat; background-position: left center; 
-    width: 100vw; 
-    display: flex; flex-direction: column; align-items: flex-end; text-align: right;
-overflow-x: hidden; }
-
-
-header { 
-    margin-bottom: 2em; 
+header {
+    margin-bottom: 2em;
     width: 752px;
-color: white;
-
+    color: white;
 }
 
 main,header {
     margin-right: 50px;
 }
+
 form {
     text-align: left;
     display: flex;
@@ -31,19 +37,20 @@ form {
     padding: 0 1.8em;
     border: 3px solid #B3935F;
     box-shadow: rgba(241, 215, 215, 0.1) 0px 4px 12px;
-    }
-
+}
 
 #name, #email, #number, #dropdown, button {
     width: 100%;
     font-size: small;
-    height: 37px;
+    height: 37px;    
+   
 }
 
-form p,button {
-    margin: 32px 0px 8px;
+form p,button, .info label {
+    margin: 32px 0px 11px;
     font-weight: 700;
     font-size: 1.2em;
+    display: inline-block;
 }
 
 .form-group {
@@ -55,12 +62,56 @@ form p,button {
     flex-direction: column;
 }
 
+.row {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}   
 
-.radio, #checkbox { 
-    display: inline-flex; align-items: center; 
-    cursor: pointer; margin-right: 18px; margin-left: 10px;
+
+input[type=checkbox], input[type=radio] {
     vertical-align: middle;
-}
-
+    float: right;
+    display: inline;
+    align-items: center;
+    cursor: pointer;  
+   
  
     
+  }
+   
+ .form-group label {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 4px;
+  } 
+ 
+
+
+  @media screen and (max-width:600px) {
+      body { 
+          align-items: center;
+        }
+
+header {
+    font-size: 1em;
+    width: 80%;
+text-align: center;}
+
+
+form,main {
+width: 90%;
+margin: 0;
+}
+
+.row {width: 45%;}
+}
+
+@media screen and (min-width:601px) and (max-width: 768px) {
+
+}
+
+@media screen (min-width: 769px) and (max-width: 1200px) {
+
+}

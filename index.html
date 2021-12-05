@@ -20,11 +20,11 @@
     <form id="survey-form" action="#" method="post">
     
     
-        <label id="name-label" for="name"><p>Nombre y Apellido: </p> </label> <input id="name" type="text" placeholder="Ricardo Perez">
-    
-        <label id="email-label" for="email"><p>Email: </p> </label> <input id="email" type="email" placeholder="nombre@dominio.com">
-    
-        <label id="number-label" for="number" ><p>Edad: </p> </label> <input id="number" type="number" min="18" max="100" placeholder="Edad" >
+        <div class="info">
+            <label id="name-label" for="name">Nombre y Apellido: </label> <input id="name" type="text" placeholder="Ricardo Perez">
+            <label id="email-label" for="email">Email: </label> <input id="email" type="email" placeholder="nombre@dominio.com">
+            <label id="number-label" for="number" >Edad: </label> <input id="number" type="number" min="18" max="100" placeholder="Edad" >
+        </div>
     
     
         <p>Estado Civil</p>
@@ -36,27 +36,48 @@
 
     <div class="form-group">
         <p>Género</p>
-        <label>Femenino<input type="radio" name="estado" value="Femenino" class="radio"></label>
-    
-        <label>Masculino<input type="radio" name="estado" value="Masculino" class="radio"></label>
-    
-        <label>No contesta<input type="radio" name="estado" value="NC" class="radio"></label>
-      
+        <div class="row">
+            <label>Femenino<input type="radio" name="estado" value="Femenino" class="radio"></label>
+            <label>Masculino<input type="radio" name="estado" value="Masculino" class="radio"></label>
+            <label>No contesta<input type="radio" name="estado" value="NC" class="radio"></label>
+        </div>
     
         <p>Actividades que te interesan</p>
         
-       
-            <label>Zumba<input type="checkbox"
-            id="checkbox"
-            name="actividades" value="zumba"></label>
-            <label>Cardio<input type="checkbox"
-                id="checkbox"
-                name="actividades" value="cardio"></label>
-            <label>Spinning<input type="checkbox" name="actividades"
-                id="checkbox"
-                value="spinning"></label>
-            <label>Crossfit<input type="checkbox" name="actividades"
-                id="checkbox" value="crossfit"></label>
+       <div class="row">
+           
+                <label>
+                    <input type="checkbox" id="checkbox"            name="actividades" value="zumba">Zumba
+                </label>
+                <label>
+                    <input type="checkbox"
+                    id="checkbox"
+                    name="actividades" value="cardio">Cardio
+                </label>
+                <label>
+                    <input type="checkbox" name="actividades"
+                    id="checkbox"
+                    value="spinning">Spinning
+                </label>
+                <label>
+                    <input type="checkbox" name="actividades"
+                    id="checkbox" value="crossfit">Crossfit
+                </label>
+                <label>
+                    <input type="checkbox" name="actividades"
+                    id="checkbox" value="boxing">Boxing
+                </label>
+                <label>
+                    <input type="checkbox" name="actividades"
+                    id="checkbox" value="aero">Aerobico
+                </label>
+                <label>
+                    <input type="checkbox" name="actividades"
+                    id="checkbox" value="pilates">Pilates
+                </label>
+       </div>
+       </div>
+            
             </div>
         
     
