@@ -9,7 +9,7 @@ body {
     background-image: url("./img/bac.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: 78%;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -24,8 +24,8 @@ header {
     color: white;
 }
 
-main,header {
-    margin-right: 50px;
+main, header {
+    margin-right: 95px;
 }
 
 form {
@@ -34,20 +34,19 @@ form {
     flex-direction: column;
     background-color: white;
     width: 507px;
-    padding: 0 1.8em;
-    border: 3px solid #B3935F;
+    padding: 0px 1.8em;
+    border: 3px solid rgb(179, 147, 95);
     box-shadow: rgba(241, 215, 215, 0.1) 0px 4px 12px;
 }
 
 #name, #email, #number, #dropdown, button {
     width: 100%;
     font-size: small;
-    height: 37px;    
-   
+    height: 37px;
 }
 
-form p,button, .info label {
-    margin: 32px 0px 11px;
+form p, button, .info label {
+    margin: 24px 0px 11px;
     font-weight: 700;
     font-size: 1.2em;
     display: inline-block;
@@ -67,51 +66,71 @@ form p,button, .info label {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-}   
+}
 
-
-input[type=checkbox], input[type=radio] {
+input[type="checkbox"], input[type="radio"] {
     vertical-align: middle;
     float: right;
     display: inline;
     align-items: center;
-    cursor: pointer;  
-   
- 
-    
-  }
-   
- .form-group label {
+    cursor: pointer;
+}
+
+.form-group label {
     display: block;
     overflow: hidden;
-    margin-bottom: 4px;
-  } 
- 
-
-
-  @media screen and (max-width:600px) {
-      body { 
-          align-items: center;
-        }
-
-header {
-    font-size: 1em;
-    width: 80%;
-text-align: center;}
-
-
-form,main {
-width: 90%;
-margin: 0;
+    margin-bottom: 7px;
 }
 
-.row {width: 45%;}
+@media screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        align-items: center;
+    }
+
+    header {
+        font-size: 1em;
+        width: 80%;
+        text-align: center;
+        margin: 0.5em auto;
+    }
+
+main {
+    margin: 0;}
+
+    form {
+        width: 97%;
+        margin: 0;
+    }
+
+    .row {
+        width: 45%;
+    }
 }
 
-@media screen and (min-width:601px) and (max-width: 768px) {
+@media screen and (min-width: 601px) and (max-width: 768px) {
+   
+   
+body {         
+        width: 100%;
+        align-items: center;
 
-}
+     }
 
-@media screen (min-width: 769px) and (max-width: 1200px) {
+header {      
+        text-align: center;     
+        margin: 0.5em auto;  
+    }
+
+main  {
+    margin: 0;
+        
+    }
+
+
+    form {
+        width: 79%;
+        margin: auto;
+    }
 
 }
